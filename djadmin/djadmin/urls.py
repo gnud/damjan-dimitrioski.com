@@ -30,6 +30,7 @@ router.register(r'groups', views.GroupViewSet)
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
+    url(r'', views.index, name='index'),
     url(r'', include('ngapp.urls')),
 
     url(r'^api/', include(router.urls)),

@@ -33,7 +33,7 @@ export function RoutesConfig ($stateProvider, $urlRouterProvider) {
     .state('app.landing', {
       url: '/',
       data: {
-        auth: true
+        auth: false
       },
       views: {
         'main@app': {
